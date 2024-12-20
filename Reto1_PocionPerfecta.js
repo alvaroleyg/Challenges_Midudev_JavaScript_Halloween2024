@@ -1,5 +1,5 @@
 function magicPotion(potions, target) {
-    const seen = {}
+    const seen = new Map()
 
     for (let i = 0; i < potions.length; i++) {
         const currentPotion = potions[i]
@@ -7,8 +7,8 @@ function magicPotion(potions, target) {
 
         console.log(`ÍNDICE: ${i} / VALOR: ${potions[i]} / FALTANTE: ${complement}`)
 
-        if (seen[complement] !== undefined) {
-            return [seen[complement], i]
+        if (seen.has(complement)) {
+            return [seen.get(complement), i]
         }
 
         seen[currentPotion] = i
