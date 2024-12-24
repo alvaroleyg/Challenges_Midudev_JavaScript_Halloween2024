@@ -28,5 +28,8 @@ function battleHorde(zombies, humans) {
     }
 }
 
+
+console.log(battleHorde('242', '334'))
 console.log(battleHorde('444', '282'))
-console.log(battleHorde('111', '111'))
+console.log(battleHorde('323', '123'))
+console.log(battleHorde('8989898999', '7779998811'))
